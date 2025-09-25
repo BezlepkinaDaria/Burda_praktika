@@ -1,0 +1,41 @@
+form{
+    background-color: DodgerBlue;
+    border-radius: 10px;
+    padding: 7px 50px;
+    width: 600px;
+    position: absolute;
+    line-height: 15px;
+}
+h3{
+    color: rgb(63, 56, 56);
+    margin-bottom: 35px;
+}
+input{
+    position: relative;
+    float: right;
+    right: 35%;
+    width: 150px;
+}
+textarea{
+    position: relative;
+    float: right;
+    right: 35%;
+    resize: none;
+    width: 150px;
+}
+.notif{
+    float: left;
+    left: 0%;
+    width: 20px;
+    margin-bottom: 10px;
+    
+}
+.submitbutton{
+    background-color: rgb(135, 222, 248);
+    border-radius: 30px;
+    border: 0;
+    height: 30px;
+    width: 300px;
+    right: 23%;
+    color: white;
+}

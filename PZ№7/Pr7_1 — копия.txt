@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ПРАКТИЧЕСКОЕ ЗАНЯТИЕ №7_1</title>
+    </head>
+	<form action="" method="GET">
+	    <input type="text" placeholder="Плейсхолдер"> <br><br>
+	    <input type="text" value="Value"><br><br>
+		<input type="disabled" disabled  placeholder="disabled"><br><br>
+		<input type="password" value="123456"><br><br>
+		<textarea placeholder="Введите текст"></textarea><br><br>
+		<input type="submit" value="Кнопка через тег input"><br><br>
+		<button>Кнопка через тег button</button><br><br>
+</form>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>7</title>
+    <style>
+        textarea {
+            display: block;
+            width: 250px;
+            height: 80px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-family: sans-serif;
+            overflow: auto; 
+        }
+
+        #no-resize {
+            resize: none;
+        }
+
+        #resize-both {
+            resize: both; 
+        }
+
+        #resize-vertical {
+            resize: vertical;
+        }
+
+        #resize-horizontal {
+            resize: horizontal;
+        }
+    </style>
+</head>
+<body>
+
+    <textarea id="no-resize" placeholder="Ограничена ширина и высота"></textarea>
+
+    <textarea id="resize-both"></textarea>
+
+    <textarea id="resize-vertical"></textarea>
+
+    <textarea id="resize-horizontal"></textarea>
+
+</body>
+</html>

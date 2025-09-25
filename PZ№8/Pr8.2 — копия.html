@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Практическая 8.2</title>
+		<link rel="stylesheet" href="Pr8.2.css">
+    </head>
+    <body>
+        <form action="" method="GET">
+            <h2>Анкета посетителя ресторана</h2>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <label>Имя<input type="text" required></input><br><br></label>
+                <label>Телефон<input type=tel pattern="[0-9\s\-\(\)]{7,}" required></input><br><br></label>
+                <label>Email<input type="email" required></input><br><br></label>
+                <label>Дата посещения<input type="date"></input><br><br></label>
+            </fieldset>
+            <fieldset style="padding-bottom: 0px;">
+                <legend>Персональная информация</legend>
+                <label>Возраст<input type="number" min="1" max="100" step="1" required></input><br><br></label>
+                <label>Любимая кухня
+                    <select>
+                        <option>Русская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                        <option>Корейская</option>
+                    </select><br><br></label>
+                <textarea rows="7"></textarea><p>Какие блюда Вы хотели бы<br>увидеть в меню?</p><br><br></fieldset>
+            <fieldset>
+                <legend>Оценка нашего заведения</legend>
+                <p style="font-weight: bold">Почему вы выбрали наше заведение?</p>
+                <input type="radio" name="why" class="radio">Недалеко от дома/работы</input><br>
+                <input type="radio" name="why" class="radio">Увидел рекламу</input><br>
+                <input type="radio" name="why" class="radio">Посоветовали</input><br>
+                <input type="radio" name="why" class="radio">Оптимальное соотношение цены и качества</input><br>
+                <p style="font-weight: bold">Вы будете рекомендовать наше заведение своим знакомым?</p>
+                <input type="radio" name="why2" class="radio">Да</input><br>
+                <input type="radio" name="why2" class="radio">Нет</input>
+            </fieldset>
+            <input type="submit" value="Отправить" class="submit">
+        </form>
+    </body>
+</html>

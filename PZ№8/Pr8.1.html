@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Практическая 8.1</title>
+		<link rel="stylesheet" href="Pr8.1.css">
+    </head>
+    <body>
+        <form action="" method="GET">
+            <h3>Форма регистрации</h3>
+            <label>ФИО<input type="text" required></input><br><br></label>
+            <label>Email<input type="email" required></input><br><br></label>
+            <label>Номер телефона<input type=tel pattern="[0-9\s\-\(\)]{7,}" required></input><br><br></label>
+            <label>Город<input type="text"></input><br><br></label>
+            <label>Дата рождения<input type="text"></input><br><br></label>
+            <h3>Параметры доставки</h3>
+            <textarea rows="7" required></textarea><br><br>
+            <p>Адрес</p>
+            <br><br><br>
+            <label>Почтовый индекс<input type="text" pattern="[0-9]{6}"></label>
+            <br><br>
+            <h3>Предпочитаемый способ получения</h3>
+            <input type="radio" name="notification" class="notif">По Email</input><br><br>
+            <input type="radio" name="notification" class="notif">По телефону</input><br><br>
+            <input type="radio" name="notification" class="notif">Не уведомлять<br>меня</input><br><br>
+            <input type="submit" value="ОТПРАВИТЬ ДАННЫЕ" class="submitbutton"></input>
+        </form>
+    </body>
+</html>

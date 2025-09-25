@@ -1,0 +1,66 @@
+form{
+    padding: 7px 50px;
+    width: 600px;
+    position: absolute;
+    line-height: 13px;
+}
+h2{
+    color: rgb(113, 60, 60);
+    margin-bottom: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+textarea{
+    position: relative;
+    float: right;
+    right: 32%;
+    width: 200px;
+    height: 50px;
+    resize: none;
+}
+p{
+    color: rgb(113, 60, 60);
+    font-size: 15px;
+}
+input{
+    position: relative;
+    float: right;
+    right: 32%;
+    width: 200px;
+    color: rgb(113, 60, 60);
+    font-size: 15px;
+}
+.radio{
+    left: 0%;
+    width: 20px;
+    margin-bottom: 10px;
+    float: none;
+}
+select{
+    position: relative;
+    float: right;
+    right: 51%;
+    width: 100px;
+}
+fieldset{
+    border: 2px solid rgb(166, 211, 211);
+    border-radius: 10px;
+    background-color: rgb(243, 239, 230);
+    color: rgb(113, 60, 60);
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+legend{
+    color: rgb(145, 193, 193);
+    font-size: 18px;
+}
+.submit{
+    border: 2px solid rgb(166, 211, 211);
+    border-radius: 5px;
+    background-color: rgb(199, 233, 233);
+    padding: 15px 0px;
+    width: 150px;
+    right: 0%;
+    float: none;
+    font-family:'Times New Roman', Times, serif;
+}

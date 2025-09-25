@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ПРАКТИЧЕСКОЕ ЗАНЯТИЕ №7_3</title>
+    </head>
+	<form action="" method="GET">
+	    <input type="checkbox"><br><br>
+		<input type="checkbox" checked><br><br>
+		<input type="checkbox" disabled checked><br><br>
+		<br>Эта группа радиокнопок - только одна из них может быть отмечена<br><br><br>
+		<input type="radio"><br><br>
+		<input type="radio"><br><br>
+		<button>Отправить на сервер</button><br><br>
+</form>
+
+</html>
