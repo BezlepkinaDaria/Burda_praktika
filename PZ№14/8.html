@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 8 - Пауза (2 в 1)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    @keyframes moveWidth {
+      from { width: 200px; }
+      to { width: 400px; }
+    }
+
+    @keyframes moveLeft {
+      from { margin-left: 0px; }
+      to { margin-left: 400px; }
+    }
+
+    /* Вариант 1: Наведение на сам элемент */
+    #hover-self {
+      height: 50px;
+      width: 200px;
+      background: red;
+      animation: moveWidth 2s linear infinite;
+      animation-play-state: paused;
+    }
+
+    #hover-self:hover {
+      animation-play-state: running;
+    }
+
+    /* Вариант 2: Наведение на другой элемент */
+    #trigger {
+      width: 150px;
+      height: 30px;
+      background: red;
+      margin-bottom: 10px;
+    }
+
+    #hover-external {
+      width: 50px;
+      height: 50px;
+      background: blue;
+      animation: moveLeft 3s linear infinite;
+      animation-play-state: paused;
+    }
+
+    #trigger:hover + #hover-external {
+      animation-play-state: running;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <div class="label">Вариант 1: Наведение на элемент запускает анимацию</div>
+    <div id="hover-self"></div>
+  </div>
+
+  <div class="section">
+    <div class="label">Вариант 2: Наведение на красный блок запускает движение синего блока</div>
+    <div id="trigger">Наведи сюда</div>
+    <div id="hover-external"></div>
+  </div>
+
+</body>
+</html>

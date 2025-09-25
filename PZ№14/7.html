@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 7 - Индикаторы</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .label {
+      margin: 10px 0 5px;
+    }
+
+    .wrapper {
+      margin-bottom: 30px;
+      width: 50%;
+      height: 30px;
+      border: 1px solid red;
+    }
+
+    .bar {
+      height: 30px;
+      background: red;
+      width: 0%;
+    }
+
+    @keyframes full {
+      from { width: 0%; }
+      to   { width: 100%; }
+    }
+
+    @keyframes half {
+      from { width: 0%; }
+      to   { width: 50%; }
+    }
+
+    #bar-full {
+      animation: full 5s linear 1 forwards;
+    }
+
+    #bar-half {
+      animation: half 5s linear 1 forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="label">Индикатор: полный (100%)</div>
+  <div class="wrapper">
+    <div class="bar" id="bar-full"></div>
+  </div>
+
+  <div class="label">Индикатор: наполовину (50%)</div>
+  <div class="wrapper">
+    <div class="bar" id="bar-half"></div>
+  </div>
+
+</body>
+</html>

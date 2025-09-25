@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 13 - Объединение рядов</title>
+  <style>
+    /* Стили для грид-контейнера */
+    .grid-container {
+      display: grid; /* Активируем грид-раскладку */
+      grid-template-columns: 1fr 1fr; /* Определяем 2 столбца одинаковой ширины */
+      grid-template-rows: repeat(3, 100px); /* Определяем 3 ряда (например, по 100px высотой) */
+      border: 1px solid black; /* Делаем границы контейнера видимыми */
+      padding: 10px; /* Добавляем внутренние отступы */
+
+      /* Добавляем ограничение по ширине и центрирование */
+      width: 500px; /* Пример фиксированной ширины контейнера */
+      margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    }
+
+    /* Стили для дочерних элементов грида */
+    .grid-item {
+      border: 1px solid #ccc; /* Делаем границы элементов видимыми */
+      padding: 10px; /* Добавляем внутренние отступы элементов */
+      text-align: center; /* Выравниваем содержимое по центру */
+    }
+
+    /* Размещение элементов согласно изображению */
+    .item-1 {
+      grid-area: 1 / 1; /* Элемент 1: Ряд 1, Столбец 1 */
+    }
+
+    .item-2 {
+      grid-area: 2 / 1; /* Элемент 2: Ряд 2, Столбец 1 */
+    }
+
+    .item-5 {
+      grid-area: 3 / 1; /* Элемент 5: Ряд 3, Столбец 1 */
+    }
+
+    .item-3 {
+      grid-area: 1 / 2; /* Элемент 3: Ряд 1, Столбец 2 */
+    }
+
+    /* Элемент 4 занимает 2 и 3 ряд во втором столбце */
+    .item-4 {
+      grid-area: 2 / 2 / 4 / 3; /* Элемент 4: Начинается Ряд 2, Столбец 2; Заканчивается Ряд 4, Столбец 3 (охватывает 2 и 3 ряд) */
+    }
+  </style>
+</head>
+<body>
+  <h1>Объединение рядов</h1>
+  <div class="grid-container">
+    <div class="grid-item item-1">A</div>
+    <div class="grid-item item-2">B</div>
+    <div class="grid-item item-3">C</div>
+    <div class="grid-item item-4">D</div>
+    <div class="grid-item item-5">E</div>
+  </div>
+</body>
+</html>

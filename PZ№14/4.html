@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 4 - Движение по квадрату</title>
+  <style>
+    body {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    @keyframes anim {
+      0%   { margin-left: 0%; margin-top: 0%; }
+      25%  { margin-left: 50%; margin-top: 0%; }
+      50%  { margin-left: 50%; margin-top: 20%; }
+      75%  { margin-left: 0%; margin-top: 20%; }
+      100% { margin-left: 0%; margin-top: 0%; }
+    }
+
+    #d1 {
+      -webkit-animation: anim 8s linear 30;
+      animation: anim 8s linear 30;
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      position: relative; /* обязательно для margin */
+    }
+  </style>
+</head>
+<body>
+  <div id="d1"></div>
+</body>
+</html>

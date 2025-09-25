@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 5 - Квадрат + Цвет</title>
+  <style>
+    body {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    @keyframes anim {
+      0%   { margin-left: 0%; margin-top: 0%; background: red; }
+      25%  { margin-left: 50%; margin-top: 0%; background: yellow; }
+      50%  { margin-left: 50%; margin-top: 20%; background: green; }
+      75%  { margin-left: 0%; margin-top: 20%; background: blue; }
+      100% { margin-left: 0%; margin-top: 0%; background: red; }
+    }
+
+    #d1 {
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      position: relative;
+      animation: anim 8s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="d1"></div>
+</body>
+</html>

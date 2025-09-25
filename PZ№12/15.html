@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 15 - Расстояние между столбцами и рядами</title>
+  <style>
+    /* Стили для грид-контейнера */
+    .grid-container {
+      display: grid; /* Активируем грид-раскладку */
+      grid-template-columns: repeat(3, 1fr); /* Определяем 3 одинаковых столбца */
+      grid-template-rows: repeat(2, 100px); /* Определяем 2 ряда для примера */
+      gap: 10px; /* Устанавливаем промежуток 10px между всеми элементами грида (и столбцами, и рядами) */
+      border: 1px solid black; /* Делаем границы контейнера видимыми */
+      padding: 10px; /* Добавляем внутренние отступы */
+      width: 500px; /* Пример фиксированной ширины контейнера */
+      margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    }
+
+    /* Стили для дочерних элементов грида */
+    .grid-item {
+      border: 1px solid #ccc; /* Делаем границы элементов видимыми */
+      padding: 10px; /* Добавляем внутренние отступы элементов */
+      text-align: center; /* Выравниваем содержимое по центру */
+    }
+  </style>
+</head>
+<body>
+  <h1>Расстояние между столбцами и рядами</h1>
+  <div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">D</div>
+    <div class="grid-item">E</div>
+    <div class="grid-item">F</div>
+  </div>
+</body>
+</html>

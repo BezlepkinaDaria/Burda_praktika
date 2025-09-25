@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 12</title>
+  <style>
+    body {
+      font-family: Georgia, serif; /* Устанавливаем шрифт для всего документа */
+      padding: 30px; /* Добавляем отступ внутри body со всех сторон */
+      text-align: center; /* Выравнивание текста по центру */
+    }
+
+    h2 {
+      font-size: 24px; /* Размер заголовка */
+      font-weight: bold; /* Жирное начертание */
+      margin-bottom: 20px; /* Отступ под заголовком */
+    }
+
+    /* Стили для грид-контейнера - основного элемента, который содержит сетку */
+    .grid-container {
+      display: grid; /* Активируем CSS Grid для этого элемента */
+
+      /* Определяем структуру столбцов сетки с нестандартными размерами */
+      /* 1-й и 3-й столбцы имеют ширину 200px */
+      /* 2-й столбец имеет ширину 100px */
+      /* 4-й столбец имеет ширину 120px */
+      grid-template-columns: 200px 100px 200px 120px;
+
+      /* Определяем структуру рядов сетки с нестандартными высотами */
+      /* 1-й ряд имеет высоту 200px */
+      /* 2-й и 3-й ряды имеют высоту 100px */
+      grid-template-rows: 200px 100px 100px;
+
+      border: 1px solid black; /* Добавляем красную рамку вокруг всего грид-контейнера для наглядности */
+      /* padding: 10px; /* Добавляем внутренний отступ (можно оставить или убрать в зависимости от желаемого вида) */
+
+      /* Задаем общую ширину контейнера и центрируем его по горизонтали */
+      /* Ширина будет суммой ширин столбцов + отступы/границы */
+      width: fit-content; /* Ширина контейнера подстраивается под содержимое (сумму ширин столбцов) */
+      margin: 0 auto; /* Автоматический расчет левого и правого отступов центрирует блочный элемент */
+    }
+
+    /* Стили для дочерних элементов грида - блоков внутри сетки */
+    .grid-item {
+      border: 1px solid black; /* Добавляем черную рамку вокруг каждого элемента грида */
+      /* padding: 10px; /* Добавляем внутренний отступ внутри каждого элемента (можно оставить или убрать) */
+
+      /* Используем Flexbox для центрирования содержимого внутри каждой ячейки */
+      display: flex; /* Активируем Flexbox для элемента */
+      justify-content: center; /* Центрируем содержимое по горизонтали внутри Flexbox */
+      align-items: center; /* Центрируем содержимое по вертикали внутри Flexbox */
+
+      font-weight: bold; /* Делаем шрифт жирным */
+      font-size: 18px; /* Увеличиваем размер шрифта */
+    }
+  </style>
+</head>
+<body>
+  <h2>Задание 12</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">D</div>
+    <div class="grid-item">E</div>
+    <div class="grid-item">F</div>
+    <div class="grid-item">G</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">J</div>
+    <div class="grid-item">K</div>
+    <div class="grid-item">L</div>
+    <div class="grid-item">M</div>
+  </div>
+</body>
+</html>

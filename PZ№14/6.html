@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 6 - Движение туда-сюда (два способа)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      margin-bottom: 40px;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    /* Вариант 1: через ключевые точки */
+    @keyframes move1 {
+      0%   { margin-left: 0px; }
+      50%  { margin-left: 400px; }
+      100% { margin-left: 0px; }
+    }
+
+    .box1 {
+      background: red;
+      animation: move1 4s linear infinite;
+    }
+
+    /* Вариант 2: через animation-direction: alternate */
+    @keyframes move2 {
+      from { margin-left: 0px; }
+      to   { margin-left: 400px; }
+    }
+
+    .box2 {
+      background: blue;
+      animation: move2 4s linear infinite alternate;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Вариант 1: через ключевые точки (0% → 50% → 100%)</h2>
+    <div class="box box1"></div>
+  </div>
+
+  <div class="container">
+    <h2>Вариант 2: через animation-direction: alternate</h2>
+    <div class="box box2"></div>
+  </div>
+
+</body>
+</html>

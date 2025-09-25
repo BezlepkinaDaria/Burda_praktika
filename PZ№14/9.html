@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 9 - Падающий мяч</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    @keyframes bouncing {
+      0%   { bottom: 200px; left: 0; animation-timing-function: ease-in; }
+      40%, 70%, 90% /* Касается */{
+        bottom: 0;
+        animation-timing-function: ease-out/* Замедление при падении*/;
+      }
+      55%  { bottom: 50px; animation-timing-function: ease-in;/* Пиковые точки */ }
+      80%  { bottom: 25px; animation-timing-function: ease-in; }
+      95%  { bottom: 10px; animation-timing-function: ease-in; }
+      100% { bottom: 0; left: 110px; animation-timing-function: ease-out; }
+    }
+
+    #wrapper {
+      margin: 0 auto;
+      width: 220px;
+      height: 220px;
+      border: 1px solid red;
+      position: relative;
+    }
+
+    #ball {
+      background: red;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      animation: bouncing 5s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="ball"></div>
+  </div>
+</body>
+</html>
