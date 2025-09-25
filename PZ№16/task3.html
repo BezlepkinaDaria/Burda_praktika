@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Задание 3 - Адаптивные столбцы</title>
+		<link rel="stylesheet" href="../styles/common.css" />
+		<style>
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0 -10px;
+			}
+
+			.column {
+				flex: 25%;
+				max-width: 25%;
+				padding: 0 10px;
+				box-sizing: border-box;
+			}
+
+			.column-content {
+				background-color: #3498db;
+				color: white;
+				padding: 20px;
+				margin-bottom: 20px;
+				border-radius: 8px;
+				text-align: center;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			/* Медиазапрос для экранов до 900px */
+			@media screen and (max-width: 900px) {
+				.column {
+					flex: 50%;
+					max-width: 50%;
+				}
+			}
+
+			/* Медиазапрос для экранов до 600px */
+			@media screen and (max-width: 600px) {
+				.column {
+					flex: 100%;
+					max-width: 100%;
+				}
+			}
+
+			.instructions {
+				background-color: #f8f9fa;
+				padding: 20px;
+				border-radius: 8px;
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Задание 3 - Адаптивные столбцы</h1>
+		</header>
+
+		<main class="container">
+			<div class="instructions">
+				<h2>Инструкция:</h2>
+				<p>
+					Измените размер окна браузера, чтобы увидеть, как меняется макет
+					столбцов:
+				</p>
+				<ul>
+					<li>На широких экранах (более 900px) - 4 столбца</li>
+					<li>На средних экранах (600px-900px) - 2 столбца</li>
+					<li>На узких экранах (менее 600px) - 1 столбец</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<div class="column-content">Столбец 1</div>
+				</div>
+				<div class="column">
+					<div class="column-content">Столбец 2</div>
+				</div>
+				<div class="column">
+					<div class="column-content">Столбец 3</div>
+				</div>
+				<div class="column">
+					<div class="column-content">Столбец 4</div>
+				</div>
+			</div>
+
+			<div class="task-navigation">
+				<a href="task2.html">← Предыдущее задание</a>
+				<a href="task4.html">Следующее задание →</a>
+			</div>
+		</main>
+	</body>
+</html>

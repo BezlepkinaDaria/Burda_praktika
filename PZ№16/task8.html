@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Задание 8 - min-width и max-width</title>
+		<link rel="stylesheet" href="../styles/common.css" />
+		<style>
+			.responsive-box {
+				width: 100%;
+				padding: 30px;
+				text-align: center;
+				font-size: 24px;
+				font-weight: bold;
+				color: white;
+				margin: 20px 0;
+				border-radius: 8px;
+				background-color: #9b59b6;
+				transition: all 0.3s;
+			}
+
+			/* Медиазапрос для диапазона ширины */
+			@media screen and (min-width: 600px) and (max-width: 900px) {
+				.responsive-box {
+					background-color: #2ecc71;
+					transform: rotate(-5deg);
+					box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+				}
+
+				.responsive-box::after {
+					content: 'Ширина экрана между 600px и 900px';
+				}
+			}
+
+			@media screen and (max-width: 599px) {
+				.responsive-box::after {
+					content: 'Ширина экрана меньше 600px';
+				}
+			}
+
+			@media screen and (min-width: 901px) {
+				.responsive-box::after {
+					content: 'Ширина экрана больше 900px';
+				}
+			}
+
+			.instructions {
+				background-color: #f8f9fa;
+				padding: 20px;
+				border-radius: 8px;
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Задание 8 - min-width и max-width</h1>
+		</header>
+
+		<main class="container">
+			<div class="instructions">
+				<h2>Инструкция:</h2>
+				<p>
+					Измените размер окна браузера, чтобы увидеть, как меняется стиль блока
+					в зависимости от ширины экрана:
+				</p>
+				<ul>
+					<li>При ширине от 600px до 900px - блок зеленый и повернут</li>
+					<li>В других случаях - блок фиолетовый и без поворота</li>
+				</ul>
+			</div>
+
+			<div class="responsive-box"></div>
+
+			<div class="task-navigation">
+				<a href="task7.html">← Предыдущее задание</a>
+				<a href="./index.html">На главную →</a>
+			</div>
+		</main>
+	</body>
+</html>

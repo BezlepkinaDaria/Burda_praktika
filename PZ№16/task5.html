@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Задание 5 - Гибкая галерея изображений</title>
+		<link rel="stylesheet" href="../styles/common.css" />
+		<style>
+			.gallery {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0 4px;
+			}
+
+			.gallery-column {
+				flex: 25%;
+				max-width: 25%;
+				padding: 0 4px;
+			}
+
+			.gallery-column img {
+				margin-top: 8px;
+				vertical-align: middle;
+				width: 100%;
+				border-radius: 8px;
+				transition: transform 0.3s;
+			}
+
+			.gallery-column img:hover {
+				transform: scale(1.03);
+			}
+
+			/* Медиазапрос для экранов до 800px */
+			@media screen and (max-width: 800px) {
+				.gallery-column {
+					flex: 50%;
+					max-width: 50%;
+				}
+			}
+
+			/* Медиазапрос для экранов до 600px */
+			@media screen and (max-width: 600px) {
+				.gallery-column {
+					flex: 100%;
+					max-width: 100%;
+				}
+			}
+
+			.instructions {
+				background-color: #f8f9fa;
+				padding: 20px;
+				border-radius: 8px;
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Задание 5 - Гибкая галерея изображений</h1>
+			<p>Измените размер окна браузера, чтобы увидеть эффект отклика.</p>
+		</header>
+
+		<main class="container">
+			<div class="instructions">
+				<h2>Инструкция:</h2>
+				<p>
+					Измените размер окна браузера, чтобы увидеть, как галерея адаптируется
+					под разные размеры экрана:
+				</p>
+				<ul>
+					<li>На широких экранах - 4 столбца изображений</li>
+					<li>На средних экранах (до 800px) - 2 столбца</li>
+					<li>На узких экранах (до 600px) - 1 столбец</li>
+				</ul>
+			</div>
+
+			<div class="gallery">
+				<div class="gallery-column">
+					<img src="1.jpg" alt="Изображение 1" />
+					<img src="2.jpg" alt="Изображение 2" />
+					<img src="3.jpg" alt="Изображение 3" />
+					<img src="1.jpg" alt="Изображение 1" />
+				</div>
+
+				<div class="gallery-column">
+					<img src="2.jpg" alt="Изображение 2" />
+					<img src="3.jpg" alt="Изображение 3" />
+					<img src="1.jpg" alt="Изображение 1" />
+					<img src="2.jpg" alt="Изображение 2" />
+				</div>
+
+				<div class="gallery-column">
+					<img src="3.jpg" alt="Изображение 3" />
+					<img src="1.jpg" alt="Изображение 1" />
+					<img src="2.jpg" alt="Изображение 2" />
+					<img src="3.jpg" alt="Изображение 3" />
+				</div>
+			</div>
+
+			<div class="task-navigation">
+				<a href="task4.html">← Предыдущее задание</a>
+				<a href="task6.html">Следующее задание →</a>
+			</div>
+		</main>
+	</body>
+</html>

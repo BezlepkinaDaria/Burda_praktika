@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/form.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/menu.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<h1>КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
+		</header>
+		<main>
+			<aside class="navigation-container">
+				<h4>Содержание</h4>
+				<div>
+					<ul id="navigation">
+						<li>
+							<a href="index.html"> На главную </a>
+						</li>
+						<li>
+							<a href="history.html">История лилий</a>
+						</li>
+						<li>
+							<a href="./Практическое занятие_15/examples/gallery.html"
+								>Фотогалерея</a
+							>
+						</li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
+			</aside>
+			<article>
+				<div class="desc" style="color: blue; width: 300px; align-self: start">
+					<p>
+						Магазин "Лилия" расположен по адресу: г.Ростов-на-Дону ул.Пушкинская
+						120
+					</p>
+					<p>Контактный телефон: 2-354-746, 6486864</p>
+					<p>Директор магазина - Безлепкина Дарья Владимировна ИС-27</p>
+				</div>
+				<div class="n">Форма обратной связи</div>
+				<form name="MyForm" action="send.php" method="post">
+					<table>
+						<tr>
+							<td>Ваше имя:</td>
+							<td><input class="input" name="name" type="text" /></td>
+						</tr>
+						<tr>
+							<td>Эл. почта:</td>
+							<td><input class="input" name="email" type="text" /></td>
+						</tr>
+						<tr>
+							<td>Тема:</td>
+							<td><input class="input" name="sub" type="text" /></td>
+						</tr>
+						<tr>
+							<td valign="top">Текст сообщения:</td>
+							<td><textarea name="body" rows="5"></textarea></td>
+						</tr>
+						<tr>
+							<td><input value="Отправить" type="submit" /></td>
+						</tr>
+					</table>
+				</form>
+			</article>
+		</main>
+	</body>
+</html>

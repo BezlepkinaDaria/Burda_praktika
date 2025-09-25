@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4 - Переменный font-size</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <style>
+        .text-box {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f1c40f;
+            color: #2c3e50;
+            text-align: center;
+            transition: font-size 0.3s;
+        }
+        
+        /* Медиазапросы для изменения размера шрифта */
+        @media screen and (max-width: 600px) {
+            .text-box {
+                font-size: 30px;
+            }
+        }
+        
+        @media screen and (min-width: 601px) {
+            .text-box {
+                font-size: 80px;
+            }
+        }
+        
+        .instructions {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Задание 4 - Переменный font-size</title>
+    </header>
+    
+    <main class="container">
+        <div class="instructions">
+            <h2>Инструкция:</h2>
+            <p>Измените размер окна браузера, чтобы увидеть, как меняется размер шрифта:</p>
+            <ul>
+                <li>Если ширина браузера не превышает 600 пикселей - размер шрифта 30px</li>
+                <li>Если ширина браузера 601px или шире - размер шрифта 80px</li>
+            </ul>
+        </div>
+        
+        <div class="text-box">
+            Этот текст меняет размер в зависимости от ширины экрана
+        </div>
+        
+        <div class="task-navigation">
+            <a href="task3.html">← Предыдущее задание</a>
+            <a href="task5.html">Следующее задание →</a>
+        </div>
+    </main>
+</body>
+</html>

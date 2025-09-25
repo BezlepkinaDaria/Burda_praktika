@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивное меню</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .topnav {
+            background-color: #4450c1;
+	    overflow: hidden;
+        }
+	.topnav a {
+		float:left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        @media screen and (max-width: 600px) {
+           	.topnav a{
+			float:none;
+			widht: 100%;
+		}
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+           <a href="#">Главная</a>
+           <a href="#">О нас</a>
+           <a href="#">Услуги</a>
+           <a href="#">Контакты</a>
+    </div>
+</body>
+</html>

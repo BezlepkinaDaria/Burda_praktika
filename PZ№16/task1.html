@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Задание 1 - Изменение цвета фона</title>
+		<link rel="stylesheet" href="../styles/common.css" />
+		<style>
+			.color-box {
+				width: 100%;
+				height: 300px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				font-size: 24px;
+				font-weight: bold;
+				transition: background-color 0.3s;
+			}
+
+			/* Медиазапросы для изменения цвета фона */
+			@media screen and (max-width: 600px) {
+				.color-box {
+					background-color: #e74c3c;
+					content: 'Экран до 600px';
+				}
+			}
+
+			@media screen and (min-width: 601px) and (max-width: 900px) {
+				.color-box {
+					background-color: #3498db;
+					content: 'Экран 601px-900px';
+				}
+			}
+
+			@media screen and (min-width: 901px) {
+				.color-box {
+					background-color: #2ecc71;
+					content: 'Экран более 900px';
+				}
+			}
+
+			.instructions {
+				background-color: #f8f9fa;
+				padding: 20px;
+				border-radius: 8px;
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Задание 1 - Изменение цвета фона</h1>
+		</header>
+			<div class="color-box">
+				<p>Этот блок меняет цвет в зависимости от ширины экрана</p>
+			</div>
+
+			<div class="task-navigation">
+				<a href="./index.html">← На главную</a>
+				<a href="task2.html">Следующее задание →</a>
+			</div>
+		</main>
+	</body>
+</html>
