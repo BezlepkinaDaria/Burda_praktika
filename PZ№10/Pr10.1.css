@@ -1,0 +1,38 @@
+input{
+    display: block;
+}
+h2{
+    display: inline-block;
+    font-family:'Calibri';
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 77px;
+    height: 100%;
+}
+.info__icon{
+    font-size: 20px;
+}
+.info__input{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+}
+.info__input_long {
+    width: 520px;
+}
+
+.info__input_short {
+    width: 320px;
+}
+.info__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 20px;
+}

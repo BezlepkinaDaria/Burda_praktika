@@ -1,0 +1,273 @@
+<!DOCTYPE html> <!-- Объявление типа документа, HTML5 -->
+<html lang="ru"> <!-- Корневой элемент, язык страницы - русский -->
+<head>
+    <meta charset="UTF-8"> <!-- Указание кодировки символов (важно для кириллицы) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Режим совместимости для Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Настройки области просмотра для адаптивности: ширина равна ширине устройства, начальный масштаб 1 -->
+    <!-- Предварительное подключение к серверам Google Fonts для ускорения загрузки шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Подключение шрифта Roboto с Google Fonts (веса 400, 500, 700) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Подключение файла стилей CSS -->
+    <link rel="stylesheet" href="Pr11.css">
+    <title>Трактир «Пушкин» - Uber Eats</title> <!-- Заголовок страницы, отображается во вкладке браузера -->
+</head>
+<body> <!-- Основное содержимое страницы -->
+    <!-- Шапка сайта -->
+    <header class="header"> <!-- Использует класс .header из CSS (белый фон, тень, высота, sticky) -->
+        <div class="container"> <!-- Ограничивает ширину и центрирует содержимое шапки -->
+            <div class="header__flex"> <!-- Flex-контейнер для логотипа и кнопок -->
+                <!-- Ссылка на главную страницу (index.html) с логотипом -->
+                <a href="index.html" class="header__logo">
+                    <img src="images/logo.svg" alt="Uber Eats Logo"> <!-- Логотип, alt - текст для доступности -->
+                </a>
+                <!-- Блок с элементами управления в шапке -->
+                <div class="header__controls">
+                    <!-- Кнопка "Войти" -->
+                    <button class="btn btn-login" type="button">Войти</button> <!-- Использует класс .btn-login из CSS -->
+                    <!-- Ссылка-иконка корзины (href="#" - заглушка) -->
+                    <a href="#" class="header__basket">
+                        <img src="images/basket.svg" alt="Корзина"> <!-- Иконка корзины -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="main-content">
+
+        <!-- Секция "Герой" (Hero Section) ресторана -->
+        <section class="restaurant-hero"> <!-- Использует класс .restaurant-hero (относительное позиционирование) -->
+            <!-- Большое изображение ресторана -->
+            <img src="images/11.png" alt="Трактир «Пушкин»" class="restaurant-hero__image"> <!-- Использует класс .restaurant-hero__image (размер, object-fit) -->
+            <!-- Контейнер для информационного блока, позиционируется поверх изображения -->
+            <div class="container"> <!-- Использует класс .container, но также стили из .restaurant-hero .container (absolute, bottom, z-index) -->
+                <!-- Белый блок с информацией о ресторане -->
+                <div class="restaurant-info"> <!-- Использует класс .restaurant-info (фон, отступы, тень, max-width) -->
+                    <!-- Название ресторана -->
+                    <h1 class="restaurant-info__title">Трактир «Пушкин»</h1> <!-- Использует класс .restaurant-info__title (размер шрифта) -->
+                    <!-- Детали: Ценовая категория и тип кухни -->
+                    <p class="restaurant-info__details">₽₽₽ • Европейская</p> <!-- Использует класс .restaurant-info__details (цвет, размер шрифта) -->
+                    <!-- Время доставки -->
+                    <p class="restaurant-info__time">40 - 50 мин</p> <!-- Использует класс .restaurant-info__time (темный фон, белый текст, форма пилюли) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Навигация по категориям меню -->
+        <nav class="category-nav"> <!-- Использует класс .category-nav (sticky, top: 72px, граница снизу) -->
+            <div class="container"> <!-- Использует класс .container и стили из .category-nav .container (overflow-x: auto для прокрутки) -->
+                <ul> <!-- Список категорий -->
+                    <!-- Элемент списка с ссылкой на секцию закусок -->
+                    <li><a href="#zakuski" class="active">Закуски</a></li> <!-- Ссылка ведет к элементу с id="zakuski". Класс .active (темный текст, подчеркивание) добавлен по умолчанию первому пункту. -->
+                    <!-- Остальные категории (ссылки ведут к соответствующим ID секций) -->
+                    <li><a href="#salaty">Салаты</a></li>
+                    <li><a href="#supy">Супы</a></li>
+                    <li><a href="#goryachee">Горячие блюда</a></li>
+                    <li><a href="#garniry">Гарниры</a></li>
+                    <li><a href="#deserty">Десерты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Секция меню: Закуски -->
+        <section class="menu-section" id="zakuski"> <!-- Использует класс .menu-section (отступы). ID "zakuski" позволяет ссылаться на эту секцию из навигации. -->
+            <div class="container"> <!-- Центрирование и ограничение ширины -->
+                <!-- Заголовок секции -->
+                <h2 class="menu-section-title">Закуски</h2> <!-- Использует класс .menu-section-title (размер, жирность, отступ) -->
+                <!-- Сетка для отображения блюд -->
+                <div class="menu-grid"> <!-- Использует класс .menu-grid (2 колонки на десктопе/планшете, 1 на мобильном, промежутки) -->
+
+                    <!-- Карточка блюда 1 -->
+                    <article class="menu-item"> <!-- Использует класс .menu-item (flex, фон, тень, рамка, отступы) -->
+                        <!-- Блок с текстом -->
+                        <div class="menu-item__content"> <!-- Использует класс .menu-item__content (flex-grow, отступ справа на десктопе) -->
+                            <h3 class="menu-item__title">Сельдь на бородинском хлебе</h3> <!-- Название -->
+                            <p class="menu-item__description">С яйцом и луком</p> <!-- Описание -->
+                            <span class="menu-item__price">240 ₽</span> <!-- Цена -->
+                        </div>
+                        <!-- Изображение блюда -->
+                        <img src="12.png" alt="Сельдь на бородинском хлебе" class="menu-item__image"> <!-- Использует класс .menu-item__image (размер, object-fit) -->
+                    </article>
+
+                    <!-- Карточка блюда 2 (Аналогичная структура) -->
+                    <article class="menu-item">
+                        <div class="menu-item__content">
+                            <h3 class="menu-item__title">Соленья ассорти</h3>
+                            <!-- Описания нет -->
+                            <span class="menu-item__price">320 ₽</span>
+                        </div>
+                        <img src="13.png" alt="Соленья ассорти" class="menu-item__image">
+                    </article>
+
+                    <!-- Карточка блюда 3 (Аналогичная структура) -->
+                    <article class="menu-item">
+                        <div class="menu-item__content">
+                            <h3 class="menu-item__title">Грибы маринованные</h3>
+                             <span class="menu-item__price">300 ₽</span>
+                        </div>
+                        <img src="14.png" alt="Грибы маринованные" class="menu-item__image">
+                    </article>
+
+                    <!-- Карточка блюда 4 (Аналогичная структура) -->
+                    <article class="menu-item">
+                        <div class="menu-item__content">
+                            <h3 class="menu-item__title">Сало домашнее с горчицей</h3>
+                            <span class="menu-item__price">320 ₽</span>
+                        </div>
+                        <img src="15.png" alt="Сало домашнее с горчицей" class="menu-item__image">
+                    </article>
+
+                    <!-- Карточка блюда 5 (Аналогичная структура) -->
+                    <article class="menu-item">
+                        <div class="menu-item__content">
+                            <h3 class="menu-item__title">Малосольная семга</h3>
+                            <span class="menu-item__price">390 ₽</span>
+                        </div>
+                        <img src="16.png" alt="Малосольная семга" class="menu-item__image">
+                    </article>
+
+                    <!-- Карточка блюда 6 (Аналогичная структура) -->
+                    <article class="menu-item">
+                        <div class="menu-item__content">
+                            <h3 class="menu-item__title">Язык говяжий с хреном</h3>
+                            <span class="menu-item__price">350 ₽</span>
+                        </div>
+                        <img src="17.png" alt="Язык говяжий с хреном" class="menu-item__image">
+                    </article>
+                </div> <!-- Конец сетки блюд -->
+            </div> <!-- Конец контейнера секции -->
+        </section> <!-- Конец секции "Закуски" -->
+
+        <!-- Секция меню: Салаты (пустая в примере) -->
+        <section class="menu-section" id="salaty"> <!-- ID "salaty" для навигации -->
+             <div class="container">
+                 <!-- Здесь мог бы быть <h2 class="menu-section-title">Салаты</h2> -->
+                 <div class="menu-grid">
+                     <!-- Здесь могли бы быть карточки салатов <article class="menu-item">...</article> -->
+                 </div>
+             </div>
+        </section>
+        <!-- Далее могли бы идти секции для Супов, Горячих блюд и т.д. с соответствующими ID -->
+
+    </main> <!-- Конец основного контента -->
+
+    <!-- Подвал сайта -->
+    <footer class="footer"> <!-- Использует класс .footer (темный фон, светлый текст, отступы) -->
+        <div class="container"> <!-- Центрирование и ограничение ширины -->
+            <div class="footer__content"> <!-- Общий контейнер для содержимого футера -->
+                <!-- Секция с логотипом -->
+                <div class="footer__logo-section">
+                     <!-- Ссылка на главную страницу с логотипом -->
+                     <a href="index.html" class="footer__logo">
+                        <!-- Белая версия логотипа -->
+                        <img src="images/logo.svg" alt="Uber Eats Logo"> <!-- Использует класс .footer__logo img (высота, фильтр для белого цвета) -->
+                    </a>
+                </div>
+                <!-- Горизонтальный разделитель -->
+                <hr class="footer__divider"> <!-- Использует класс .footer__divider (стили линии) -->
+
+                <!-- Секция с навигационными колонками -->
+                <div class="footer__nav-section"> <!-- Использует класс .footer__nav-section (flex, space-between, wrap) -->
+                    <!-- Колонка 1: Язык и соцсети -->
+                    <div class="footer__col footer__col--lang-social"> <!-- Использует класс .footer__col -->
+                        <!-- Выбор языка -->
+                        <div class="footer__lang-selector">
+                            <select name="lang" id="lang"> <!-- Выпадающий список -->
+                                <option value="ru">Русский</option> <!-- Опция -->
+                                <option value="en">English</option> <!-- Опция -->
+                            </select> <!-- Использует стили .footer__lang-selector select (внешний вид, стрелка) -->
+                        </div>
+                        <!-- Социальные сети -->
+                        <div class="footer__social">
+                            <span class="footer__social-tag">#UberEats</span> <!-- Тэг -->
+                            <div class="footer__social-links"> <!-- Контейнер для иконок -->
+                                <!-- Ссылки с иконками -->
+                                <a href="#"><img src="images/facebook.png"></a>
+                                <a href="#"><img src="images/twitter.png"></a>
+                                <a href="#"><img src="images/instagram.png"></a>
+                                <!-- Используют стили .footer__social-links a (отступы, прозрачность) и .footer__social-links img (размер, фильтр) -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 2: Ссылки -->
+                    <div class="footer__col footer__col--links"> <!-- Использует классы .footer__col и .footer__col--links -->
+                       <ul> <!-- Список ссылок -->
+                            <li><a href="#">Об UberEats</a></li>
+                            <li><a href="#">Станьте партнёром по доставке</a></li>
+                            <li><a href="#">Станьте парнёром-рестораном</a></li>
+                            <!-- Используют стили .footer__col--links ul li (отступы) -->
+                        </ul>
+                    </div>
+
+                     <!-- Колонка 3: Ссылки -->
+                     <div class="footer__col footer__col--links">
+                         <ul>
+                            <li><a href="#">Все города</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Горизонтальный разделитель -->
+                <hr class="footer__divider">
+
+                <!-- Секция со ссылками на приложения -->
+                <div class="footer__apps-section"> <!-- Использует класс .footer__apps-section (flex, gap) -->
+                     <!-- Ссылка на App Store -->
+                     <a href="#" class="footer__app-link">
+                        <img src="images/apps.png" alt="Download on the App Store"> <!-- Использует стили .footer__app-link img (высота) -->
+                    </a>
+                     <!-- Ссылка на Google Play -->
+                     <a href="#" class="footer__app-link">
+                        <img src="images/google.png" alt="Get it on Google Play">
+                    </a>
+                </div>
+                 <!-- Горизонтальный разделитель -->
+                <hr class="footer__divider">
+
+                <!-- Юридическая секция -->
+                <div class="footer__legal-section"> <!-- Использует класс .footer__legal-section (flex, space-between, wrap, цвет, размер шрифта) -->
+                    <p>© 2017 Uber Technologies Inc.</p> <!-- Копирайт -->
+                    <p><a href="#">Обработка персональных данных</a></p> <!-- Ссылка -->
+                    <p><a href="#">Пользовательское соглашение</a></p> <!-- Ссылка -->
+                </div>
+            </div>
+        </div>
+        <!-- Кнопка "Наверх" -->
+        <button class="scroll-to-top" title="Наверх" aria-label="Наверх">↑</button> <!-- Использует класс .scroll-to-top (позиционирование, вид, скрыта по умолчанию). title и aria-label для доступности. -->
+    </footer>
+
+    <!-- Встроенный JavaScript для кнопки "Наверх" -->
+    <script>
+        const scrollBtn = document.querySelector('.scroll-to-top'); // Находим кнопку по ее классу и сохраняем в переменную scrollBtn
+        const scrollThreshold = 300; // Устанавливаем порог прокрутки в пикселях (300px), после которого кнопка должна появиться
+
+        // Добавляем слушатель события 'scroll' на окно браузера
+        window.addEventListener('scroll', () => {
+            // При каждом событии прокрутки проверяем, насколько прокручена страница по вертикали (window.scrollY)
+            if (window.scrollY > scrollThreshold) { // Если прокручено больше, чем порог (300px)
+                scrollBtn.style.opacity = '1'; // Делаем кнопку полностью видимой (плавно, из-за transition в CSS)
+                scrollBtn.style.visibility = 'visible'; // Делаем кнопку доступной для клика и скринридеров
+            } else { // Если прокручено меньше порога
+                scrollBtn.style.opacity = '0'; // Делаем кнопку полностью прозрачной (плавно)
+                scrollBtn.style.visibility = 'hidden'; // Скрываем кнопку от взаимодействия
+            }
+        });
+
+        // Добавляем слушатель события 'click' на кнопку
+        scrollBtn.addEventListener('click', () => {
+            // При клике на кнопку плавно прокручиваем окно к самому верху
+            window.scrollTo({
+                top: 0, // Целевая позиция - 0 пикселей от верха
+                behavior: 'smooth' // Указываем, что прокрутка должна быть плавной (анимированной)
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+.container {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: #5eff00;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.row {
+    flex-direction: row;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.column {
+    flex-direction: column;
+}
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.center {
+    justify-content: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.baseline-container {
+    align-items: baseline;
+    height: 150px;
+}
+.baseline-item {
+    width: 50px;
+    background-color: #e5f321;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* 4. align-self */
+.align-self-container {
+    height: 200px;
+}
+.self-start {
+    align-self: flex-start;
+}
+.self-end {
+    align-self: flex-end;
+}
+.self-center {
+    align-self: center;
+}
+.self-baseline {
+    align-self: baseline;
+}
+.self-stretch {
+    align-self: stretch;
+    height: auto;
+}
+
+.align-content-container {
+    flex-wrap: wrap;
+    height: 300px;
+}
+.content-start {
+    align-content: flex-start;
+}
+.content-end {
+    align-content: flex-end;
+}
+.content-center {
+    align-content: center;
+}
+.content-between {
+    align-content: space-between;
+}
+.content-around {
+    align-content: space-around;
+}
+.content-evenly {
+    align-content: evenly;
+}
+.content-item {
+    width: 100px;
+    height: 50px;
+    background-color: #0efcdc;
+    margin: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stretch-item {
+    height: auto;
+}
+
+.wrap-container {
+    width: 300px;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.wrap-item {
+    width: 80px;
+    height: 50px;
+    background-color: #ff4e74;
+    margin: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h2{
+    color: red;
+}

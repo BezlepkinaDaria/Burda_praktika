@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Мета-теги и подключение шрифтов/стилей - аналогично restaurant.html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Pr11.css">
+    <title>Uber Eats</title> <!-- Заголовок главной страницы -->
+</head>
+<body>
+    <!-- Шапка сайта - структура идентична restaurant.html -->
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <!-- Логотип ссылается на главную страницу ("/") -->
+                <a href="/" class="header__logo">
+                    <img src="images/logo.svg" alt="Uber Eats Logo">
+                </a>
+                <div class="header__controls">
+                    <!-- ОТЛИЧИЕ: Кнопка "Войти" здесь содержит ссылку на страницу ресторана -->
+                    <button class="btn btn-login" type="button"><a href="restaurant.html">Войти</a></button> <!-- Внутри кнопки - ссылка на restaurant.html -->
+                    <!-- Корзина -->
+                    <a href="#" class="header__basket">
+                        <img src="images/basket.svg" alt="Корзина">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Секция поиска -->
+        <section class="search-section"> <!-- Использует класс .search-section (отступы, тень, фон) -->
+            <div class="container"> <!-- Центрирование -->
+                <!-- Поле ввода для поиска -->
+                <input type="text" class="search__input" placeholder="Поиск по ресторанам и кухням"> <!-- Использует класс .search__input (ширина, отступы, рамка) -->
+            </div>
+        </section>
+
+        <!-- Секция со списком ресторанов -->
+        <section class="restaurants-section"> <!-- Использует класс .restaurants-section (отступ снизу, фон) -->
+            <div class="container"> <!-- Центрирование -->
+                <!-- Заголовок секции -->
+                <h2 class="section-title">Рестораны в Москве</h2> <!-- Использует класс .section-title -->
+                <!-- Сетка для карточек ресторанов -->
+                <div class="restaurants-grid"> <!-- Использует класс .restaurants-grid (3 колонки на десктопе, 2 на планшете, 1 на мобильном) -->
+
+                    <!-- Карточка ресторана 1 -->
+                    <div class="card"> <!-- Использует класс .card (фон, тень, скругления, hover-эффект) -->
+                        <!-- Изображение ресторана -->
+                        <img src="images/price/1.png" alt="Макдоналдс" class="card__image"> <!-- Использует класс .card__image (ширина, aspect-ratio, object-fit) -->
+                        <!-- Текстовое содержимое карточки -->
+                        <div class="card__content"> <!-- Использует класс .card__content (отступы) -->
+                            <h3 class="card__title">Макдоналдс — Газетный</h3> <!-- Использует класс .card__title (стили, обрезка текста) -->
+                            <p class="card__info">₽₽ ⋅ Бургеры</p> <!-- Использует класс .card__info (стили) -->
+                            <p class="card__time">25 - 35 мин</p> <!-- Использует класс .card__time (стили) -->
+                        </div>
+                    </div>
+                    <!-- Карточка ресторана 2 (Аналогичная структура) -->
+                    <div class="card">
+                        <img src="images/price/2.png" alt="DimSum & Co" class="card__image">
+                         <div class="card__content">
+                            <h3 class="card__title">DimSum & Co — ЦДМ</h3>
+                            <p class="card__info">₽ ⋅ Японская ⋅ Китайская ⋅ Азиатская</p>
+                            <p class="card__time">40 - 50 мин</p>
+                        </div>
+                    </div>
+                    <!-- Карточка ресторана 3 (Аналогичная структура) -->
+                    <div class="card">
+                        <img src="images/price/3.png" alt="ДвижОК" class="card__image">
+                         <div class="card__content">
+                            <h3 class="card__title">ДвижОК — Манежная</h3>
+                            <p class="card__info">₽ ⋅ Американская ⋅ Европейская</p>
+                            <p class="card__time">35 - 45 мин</p>
+                        </div>
+                    </div>
+
+                     <!-- Карточка ресторана 4 (Аналогичная структура) -->
+                     <div class="card">
+                        <img src="images/price/4.png" alt="НЯ - NHA" class="card__image">
+                         <div class="card__content">
+                            <h3 class="card__title">НЯ — NHA</h3>
+                            <p class="card__info">₽₽ ⋅ Вьетнамская</p>
+                            <p class="card__time">30 - 40 мин</p>
+                        </div>
+                    </div>
+                    <!-- Карточка ресторана 5 (Аналогичная структура) -->
+                    <div class="card">
+                        <img src="images/price/5.png" alt="Точка Дзы" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Точка Дзы — Цветной</h3>
+                            <p class="card__info">₽₽ ⋅ Вьетнамская</p>
+                            <p class="card__time">40 - 50 мин</p>
+                        </div>
+                    </div>
+                    <!-- Карточка ресторана 6 (Аналогичная структура) -->
+                    <div class="card">
+                        <img src="images/price/6.png" alt="Cinnabon" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Cinnabon</h3>
+                            <p class="card__info">₽ ⋅ Выпечка ⋅ Десерты ⋅ Капкейки</p>
+                            <p class="card__time">25 - 35 мин</p>
+                        </div>
+                    </div>
+
+                     <!-- Карточка ресторана 7 (Аналогичная структура) -->
+                     <div class="card">
+                        <img src="images/price/7.png" alt="PIZZELOVE" class="card__image">
+                         <div class="card__content">
+                            <h3 class="card__title">PIZZELOVE</h3>
+                            <p class="card__info">₽₽ ⋅ Пицца</p>
+                            <p class="card__time">15 - 25 мин</p>
+                        </div>
+                    </div>
+                    <!-- Карточка ресторана 8 (Аналогичная структура) -->
+                    <div class="card">
+                        <img src="images/price/8.png" alt="Zю кафе" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Zю кафе — Тверская</h3>
+                            <p class="card__info">₽₽ ⋅ Японская</p>
+                            <p class="card__time">25 - 35 мин</p>
+                        </div>
+                    </div>
+                     <!-- Карточка ресторана 9 (Аналогичная структура) -->
+                     <div class="card">
+                        <img src="images/price/9.png" alt="Bar BQ Cafe" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Bar BQ Cafe — Манежная</h3>
+                            <p class="card__info">₽₽₽ ⋅ Европейская</p>
+                            <p class="card__time">30 - 40 мин</p>
+                        </div>
+                    </div>
+
+                </div> <!-- Конец сетки ресторанов -->
+            </div> <!-- Конец контейнера -->
+        </section> <!-- Конец секции ресторанов -->
+    </main> <!-- Конец основного контента -->
+
+    <!-- Подвал сайта - структура идентична restaurant.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo-section">
+                     <!-- Логотип ссылается на главную ("/") -->
+                     <a href="/" class="footer__logo">
+                        <!-- В оригинале здесь logo.svg, но логичнее logo-white.svg. Оставим как в оригинале. -->
+                        <img src="images/logo.svg" alt="Uber Eats Logo"> <!-- Убедитесь, что используется правильный логотип (белый) -->
+                    </a>
+                </div>
+                <hr class="footer__divider">
+
+                <div class="footer__nav-section">
+                    <!-- Колонки навигации - идентично restaurant.html -->
+                    <div class="footer__col footer__col--lang-social">
+                        <div class="footer__lang-selector">
+                            <select name="lang" id="lang">
+                                <option value="ru">Русский</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                        <div class="footer__social">
+                            <span class="footer__social-tag">#UberEats</span>
+                            <div class="footer__social-links">
+                                <a href="#"><img src="images/social/facebook.png" alt="Facebook"></a>
+                                <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                                <a href="#"><img src="images/social/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__col footer__col--links">
+                       <ul>
+                            <li><a href="#">Об UberEats</a></li>
+                            <li><a href="#">Станьте партнёром по доставке</a></li>
+                            <li><a href="#">Станьте парнёром-рестораном</a></li>
+                        </ul>
+                    </div>
+
+                     <div class="footer__col footer__col--links">
+                         <ul>
+                            <li><a href="#">Все города</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                 <hr class="footer__divider">
+
+                <!-- Ссылки на приложения -->
+                <div class="footer__apps-section">
+                     <!-- ОТЛИЧИЕ: Используются другие имена файлов для кнопок -->
+                     <a href="#" class="footer__app-link">
+                        <img src="images/apps.png" alt="Download on the App Store"> <!-- Имя файла appstore.png -->
+                    </a>
+                     <a href="#" class="footer__app-link">
+                        <img src="images/google.png" alt="Get it on Google Play"> <!-- Имя файла googleplay.png -->
+                    </a>
+                </div>
+                <hr class="footer__divider">
+
+                <!-- Юридическая секция - идентично restaurant.html -->
+                <div class="footer__legal-section">
+                    <p>© 2017 Uber Technologies Inc.</p>
+                    <p><a href="#">Обработка персональных данных</a></p>
+                    <p><a href="#">Пользовательское соглашение</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Кнопка "Наверх" -->
+        <button class="scroll-to-top" title="Наверх" aria-label="Наверх">↑</button>
+    </footer>
+
+    <!-- JavaScript для кнопки "Наверх" -->
+    <script>
+        const scrollBtn = document.querySelector('.scroll-to-top'); // Находим кнопку
+        const scrollThreshold = 300; // Порог прокрутки
+
+        // Слушатель события прокрутки
+        window.addEventListener('scroll', () => {
+            // Проверка прокрутки
+            if (window.scrollY > scrollThreshold) {
+                // ОТЛИЧИЕ: Здесь используется display: block/none вместо opacity/visibility.
+                // Эффект будет менее плавным (резкое появление/исчезновение), если в CSS нет transition для display.
+                scrollBtn.style.display = 'block'; // Показать кнопку
+            } else {
+                scrollBtn.style.display = 'none'; // Скрыть кнопку
+            }
+        });
+
+        // Слушатель клика по кнопке - идентично restaurant.html
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Плавно прокрутить вверх
+            });
+        });
+    </script>
+
+</body>
+</html>

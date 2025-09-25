@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая 9</title>
+    <link rel="stylesheet" href="Pr9.css">
+</head>
+<body>
+    <section class="info">
+        <div class="info__icon"></div>
+    
+    <h2>flex-direction</h2>
+    
+    <h3>row (по умолчанию)</h3>
+    <div class="container row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <h3>row-reverse</h3>
+    <div class="container row-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <h3>column</h3>
+    <div class="container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <h3>column-reverse</h3>
+    <div class="container column-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>justify-content</h2>
+
+    <h3>flex-start (по умолчанию)</h3>
+    <div class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>flex-end</h3>
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="container space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>space-around</h3>
+    <div class="container space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>space-evenly</h3>
+    <div class="container space-evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>Выравнивание по базовой линии (baseline)</h2>
+    <div class="container baseline-container">
+        <div class="baseline-item" style="height: 30px; font-size: 12px;">1</div>
+        <div class="baseline-item" style="height: 50px; font-size: 18px;">2</div>
+        <div class="baseline-item" style="height: 70px; font-size: 24px;">3</div>
+        <div class="baseline-item" style="height: 40px; font-size: 14px;">4</div>
+    </div>
+
+    <h2>align-self</h2>
+    <div class="container align-self-container">
+        <div class="item self-start">start</div>
+        <div class="item self-end">end</div>
+        <div class="item self-center">center</div>
+        <div class="item self-baseline" style="height: 70px;">baseline</div>
+        <div class="item self-stretch">stretch</div>
+    </div>
+
+    <h2>align-content</h2>
+
+    <h3>flex-start</h3>
+    <div class="container align-content-container content-start">
+        <div class="content-item">1</div>
+        <div class="content-item">2</div>
+        <div class="content-item">3</div>
+        <div class="content-item">4</div>
+        <div class="content-item">5</div>
+        <div class="content-item">6</div>
+    </div>
+
+    <h3>flex-end</h3>
+    <div class="container align-content-container content-end">
+        <div class="content-item">1</div>
+        <div class="content-item">2</div>
+        <div class="content-item">3</div>
+        <div class="content-item">4</div>
+        <div class="content-item">5</div>
+        <div class="content-item">6</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="container align-content-container content-center">
+        <div class="content-item">1</div>
+        <div class="content-item">2</div>
+        <div class="content-item">3</div>
+        <div class="content-item">4</div>
+        <div class="content-item">5</div>
+        <div class="content-item">6</div>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="container align-content-container content-between">
+        <div class="content-item">1</div>
+        <div class="content-item">2</div>
+        <div class="content-item">3</div>
+        <div class="content-item">4</div>
+        <div class="content-item">5</div>
+        <div class="content-item">6</div>
+    </div>
+
+    <h3>space-around</h3>
+    <div class="container align-content-container content-around">
+        <div class="content-item">1</div>
+        <div class="content-item">2</div>
+        <div class="content-item">3</div>
+        <div class="content-item">4</div>
+        <div class="content-item">5</div>
+        <div class="content-item">6</div>
+    </div>
+
+    <h3>evenly</h3>
+    <div class="container align-content-container content-evenly">
+        <div class="content-item evenly-item">1</div>
+        <div class="content-item evenly-item">2</div>
+        <div class="content-item evenly-item">3</div>
+        <div class="content-item evenly-item">4</div>
+        <div class="content-item evenly-item">5</div>
+        <div class="content-item evenly-item">6</div>
+    </div>
+
+    <h2>flex-wrap</h2>
+
+    <h3>nowrap (по умолчанию)</h3>
+    <div class="container wrap-container nowrap">
+        <div class="wrap-item">1</div>
+        <div class="wrap-item">2</div>
+        <div class="wrap-item">3</div>
+        <div class="wrap-item">4</div>
+        <div class="wrap-item">5</div>
+    </div>
+
+    <h3>wrap</h3>
+    <div class="container wrap-container wrap">
+        <div class="wrap-item">1</div>
+        <div class="wrap-item">2</div>
+        <div class="wrap-item">3</div>
+        <div class="wrap-item">4</div>
+        <div class="wrap-item">5</div>
+    </div>
+
+    <h3>wrap-reverse</h3>
+    <div class="container wrap-container wrap-reverse">
+        <div class="wrap-item">1</div>
+        <div class="wrap-item">2</div>
+        <div class="wrap-item">3</div>
+        <div class="wrap-item">4</div>
+        <div class="wrap-item">5</div>
+    </div>
+</body>
+</html>

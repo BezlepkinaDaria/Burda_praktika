@@ -1,0 +1,40 @@
+input{
+    margin-right: 10px;
+}
+h2{
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+}
+.expert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 77px;
+    height: 100%;
+}
+.expert__label {
+    font-size: 18px;
+    margin: 5px 0;
+    
+}
+.expert__form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid lightgray;
+    padding: 30px;
+    margin: 0 20px;
+    width: 170px;
+}
+.expert__form_container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 20px;
+}
+.expert__icon{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
