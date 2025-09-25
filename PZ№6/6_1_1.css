@@ -1,0 +1,14 @@
+.seo{
+	font-weight: bold;
+	color: blue;
+}
+a{
+	float: right;
+	text-decoration: none;
+}
+div{
+	margin: auto;
+	padding: auto;
+	width: 700px;
+}
+	

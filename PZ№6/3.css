@@ -1,0 +1,30 @@
+body{
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin:20px;
+text-align: justify; 
+}
+#text{
+	width: 720px;
+	margin: 0px auto 60px auto;
+	padding: 0px 10px;
+	border: 2px solid black;
+}
+.y{
+text-indent: 50px;
+}
+.uzab{
+	font-weight: bold;
+	color: #FF33CC;
+}
+a{
+	float: right;
+	text-decoration: none;
+	color: #FF33CC;
+}
+.miy{
+	color: #33CC33;
+}
+.a{
+color: white;
+}

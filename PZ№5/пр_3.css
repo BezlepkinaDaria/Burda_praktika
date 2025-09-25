@@ -1,0 +1,28 @@
+.menu1 {
+	list-style-type: none; 
+	width: 200px;
+}
+.menu2 a:link, .menu2 a:visited{
+	text-decoration: none;
+	color: white;
+	font: 13px Arial;
+	border: 1px solid black;
+	display: block;
+	padding: 0px 5px;
+	line-height: 25px;
+	margin:6px;
+	background-color: #333840;
+	font-weight: bold;
+}
+.menu2 a:hover{
+	text-decoration: none;
+	color: black;
+	font: 13px Arial;
+	border: 1px solid black;
+	display: block;
+	padding: 0px 5px;
+	line-height: 25px;
+	margin:6px;
+	background-color: white;
+	font-weight: bold;
+}

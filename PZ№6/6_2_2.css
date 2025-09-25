@@ -1,0 +1,21 @@
+.seo{
+	font-weight: bold;
+	color: blue;
+}
+a{
+	float: right;
+	text-decoration: none;
+}
+.car{
+	margin: 4px 7px 0px;
+	width: 250px;
+	border: 1px solid black;
+}
+div{
+	width: 1000px;
+	margin: auto;
+	padding: auto;
+}
+.sss{
+	font-size: 25px;
+	text-align: justify;

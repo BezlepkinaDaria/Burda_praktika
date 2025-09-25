@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ПРАКТИЧЕСКОЕ ЗАНЯТИЕ №5</title>
+		<link rel="stylesheet" href="пр_7.css">
+    </head>
+	<body>
+		 <ul class="menu5">
+		   <li><a href="#">авиабилеты</a></li>
+		   <li><a href="#">чартеры</a></li>
+		   <li><a href="#">ж/д билеты</a></li>
+		   <li><a href="#">гостиницы</a></li>
+		   <li><a href="#">туризм</a></li>
+		  </ul>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+font: 16px Times New Roman, sans-serif;
+line-height: 1.9;
+margin: 10px;
+text-align: justify; 
+}
+.miy{
+margin: 35px 50px;
+}
+#text{
+	width: 654px;
+	margin: 30px 70px;
+	padding: 4px 0px;
+	border: 2px solid black;
+	line-height: 1.2em;
+
+}
+.y{
+margin-right: 10px;
+margin-left: 10px; 
+}
+.menu1 {list-style-type: none;}
+.menu1 li{margin: -13px -40px; float: center;}
+.menu1 a:link, .menu1 a:visited{
+	text-decoration: none;
+	color: white;
+	font: 13px Arial;
+	background-color: black;
+	padding: 10px 34px;
+	text-align: justify;
+}
+.menu1 a:hover, .menu1 a.active{
+	color: black;	
+	background-color: white;
+}

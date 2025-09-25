@@ -1,0 +1,32 @@
+.calendar {
+    text-decoration: none;
+	color: grey;
+	font: 11px Arial;
+	padding: 1px 5px;
+}
+.calendar1 {
+	text-decoration: none;
+	color: #B4CFEC;
+	font: 10px Arial;
+	padding: 1px 3px;
+}
+.calendar2 {
+	text-decoration: none;
+	color: #B4CFEC;
+	font: 10px Arial;
+	padding: 1px 3px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+.calendar3 {
+	text-decoration: none;
+	color: grey;
+	font: 10px Arial;
+	padding: 1px 3px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+.calendar td.weekend {
+  color: red;
+  font-weight: bold;
+}

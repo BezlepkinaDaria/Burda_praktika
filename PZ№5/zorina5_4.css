@@ -1,0 +1,25 @@
+.menu1{list-style-type: none; width: 235px;}
+.menu1 li{margin-bottom: 10px;}
+.menu1 a:link, .menu1 a:visited{
+	text-decoration: none;
+	color: white;
+	background-color: #00a3da;
+	font: 13px Arial;
+	border: 1px solid #00a3da;
+	display: block;
+	padding: 0px 5px;
+	line-height: 30px;
+	margin-top:5px;
+}
+.menu1 a:hover{
+color:#00a3da;
+background-color:white;
+}
+.airplane{
+	widht:20px;
+	height:20px;
+	margin-left:110px;
+	vertical-align: middle;
+	display: inline;
+}
+

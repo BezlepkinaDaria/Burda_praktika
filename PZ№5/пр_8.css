@@ -1,0 +1,17 @@
+.menu5 {list-style-type: none;}
+.menu5 li{margin-right: 0px; float: left;}
+.menu5 a:link, .menu5 a:visited{
+	text-decoration: none;
+	color: white;
+	background-color: orange;
+	font: 11px Arial;
+	border: 1px solid orange;
+	padding: 5px 22px;
+}
+.menu5 a:hover, .menu5 a.active{
+	color: white;
+	background-color: red;	
+}
+.menu5 {
+	background-color: orange;
+}

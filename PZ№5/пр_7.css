@@ -1,0 +1,11 @@
+.menu5 {list-style-type: none;}
+.menu5 li{margin-right: 4px; float: left;}
+.menu5 a:link, .menu5 a:visited{
+	text-decoration: none;
+	color: grey;
+	font: 13px Arial;
+	padding: 5px;
+}
+.menu5 a:hover, .menu5 a.active{
+	color: #0288D1;
+}
