@@ -1,0 +1,25 @@
+caption{
+	color:#990000;
+	font-weight:bold;
+}
+thead{
+	color:#990000;
+	font-weight:bold;
+}
+table{
+	border:outset #CCCCCC;
+	border-collapse:separate;
+	margin:auto;
+	padding:auto;
+	font-weight:bold;
+}
+tr,td{
+	border:1px solid grey;
+	font-weight:bold;
+}
+th{
+	background-color:#CCCCCC;
+}
+body{
+	background-image: url("y.png")
+}

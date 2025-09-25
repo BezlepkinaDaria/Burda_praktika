@@ -1,0 +1,49 @@
+#wrapper{
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  border-radius: 50%;
+  position: relative;
+}
+
+#elem1{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#elem2{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#elem3{
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 72px;
+  left: 62.5px;
+}
+
+#elem4{
+    width: 70px;
+    height: 50px;
+    border-bottom: 10px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    top: 75px;
+
+  }

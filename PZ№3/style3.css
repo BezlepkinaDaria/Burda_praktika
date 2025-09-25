@@ -1,0 +1,29 @@
+html{
+	background-color: #F3D7D4
+}
+caption{
+	color: #B06760;
+}
+table{
+	
+	border: 6px outset #FFFFFF;
+	border-collapse: separate;
+	margin:auto;
+	padding:auto;
+	width: 450px;
+}
+tr,td,th{
+	border:2px inset #FFFFFF;
+	text-align:left;
+}
+th.period{
+	background-color: #d27981;
+	color: white;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 15px;
+	width: 150px;
+}
+
+
+	

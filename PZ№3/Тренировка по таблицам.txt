@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<title>Тренировка по таблицам</title>
+		<link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+	    <table>
+			<caption>Бесполезная трата времени</caption>
+			<thead>
+				<tr>
+					<th>№ п\п</th>
+					<th>Название</th>
+					<th>Кол-во часов</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1.</td>
+					<td>Соц.сети</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>Реклама</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td>Пробки</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Итого</td>
+					<td>12</td>
+				</tr>
+			</tfoot>				
+		</table>
+	</body>
+</html>	

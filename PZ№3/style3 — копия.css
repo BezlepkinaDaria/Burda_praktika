@@ -1,0 +1,19 @@
+html{
+	background-color: #F3D7D4
+}
+caption{
+	color: #B06760;
+}
+table{
+	
+	border: 6px outset #FFFFFF;
+	border-collapse: separate;
+	margin:auto;
+	padding:auto;
+	width: 450px;
+}
+tr,td,th{
+	border:2px inset #FFFFFF;
+	padding left: 50px;
+	text-align:left;
+}
